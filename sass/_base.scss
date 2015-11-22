@@ -1,0 +1,47 @@
+////////////
+// FONTS  //
+////////////
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Mono';
+  margin: 0;
+}
+
+// h1, h2, h3, h4, h5, p {
+//   letter-spacing: 3.86px;
+//   line-height: 24px;
+// }
+
+p {
+  font-family: 'Playfair Display';
+  margin: 0;
+}
+
+////////////////
+// NORMALIZE  //
+////////////////
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: $text;
+  letter-spacing: 3.86px;
+  line-height: 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}
+
+.container {
+  flex-flow: column
+}

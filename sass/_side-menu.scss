@@ -1,0 +1,38 @@
+.side-menu {
+  margin-left: 25px;
+  background-color: $menu-white;
+  border-radius: 10px;
+  border: solid 1px $border-grey;
+  padding: 10px 40px;
+  display: inline-block;
+}
+
+.menu-group {
+  margin: 40px 0;
+}
+
+.menu-title, .submenu-item {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu-title {
+  font: normal 25px/33px 'Roboto Mono';
+  letter-spacing: 5.36px;
+  text-transform: uppercase;
+}
+
+.submenu-group {
+  margin-top: 40px;
+  padding-left: 25px;
+  border-left: solid 1px $border-grey;
+}
+
+.submenu-item {
+  font: normal 18px/1em 'Playfair Display';
+  letter-spacing: 3.86px;
+  display: block;
+  font-style: italic;
+  margin-top: 35px;
+}

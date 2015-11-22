@@ -1,0 +1,65 @@
+.nav-bar {
+  width: 100%;
+  background-color: $menu-white;
+  padding: 17px 0;
+  text-align: center;
+  position: relative;
+  border-bottom: solid 1px $border-grey;
+  margin-bottom: 25px;
+
+  h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  // SOCIAL GROUP //
+  .handle,
+  .hamburger-menu,
+  .handle-name,
+  [class^="social-group-"],
+  [class^="icon-"],
+  [class*="icon-"] {
+    display: inline-block;
+  }
+
+  .handle, .hamburger-menu {
+    &:hover {
+      cursor: pointer
+    }
+  }
+
+  //////////////////
+  // SOCIAL ICONS //
+  //////////////////
+
+  [class^="icon-"], [class*="icon-"] {
+    font-size: 32px;
+    vertical-align: bottom;
+    margin: 0 10px;
+    &.shrink {
+      font-size: 16px;
+      text-shadow: 1px 1px 4px #000;
+    }
+  }
+}
+
+.handle {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hamburger-menu {
+  vertical-align: middle;
+  position: absolute;
+  left: 60px;
+  bottom: 14px;
+
+  h1, img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
