@@ -1,41 +1,46 @@
 .nav-bar {
   width: 100%;
   background-color: $menu-white;
-  padding: 17px 0;
+  // padding: 17px 0;
+  line-height: 66px;
   text-align: center;
-  position: relative;
+  position: fixed;
   border-bottom: solid 1px $border-grey;
   margin-bottom: 25px;
+  top: 0;
 
   h1 {
     font-size: 18px;
     text-transform: uppercase;
   }
 
-  // SOCIAL GROUP //
-  .handle,
+  #handle,
   .hamburger-menu,
-  .handle-name,
-  [class^="social-group-"],
+  #handle-name,
   [class^="icon-"],
   [class*="icon-"] {
     display: inline-block;
   }
 
-  .handle, .hamburger-menu {
+  #handle, .hamburger-menu {
     &:hover {
       cursor: pointer
     }
   }
 
-  //////////////////
-  // SOCIAL ICONS //
-  //////////////////
+  /* === SOCIAL FONT ICONS === */
+
+  .social-link {
+    display: inline-block;
+    min-width: 60px;
+    height: auto;
+  }
 
   [class^="icon-"], [class*="icon-"] {
     font-size: 32px;
     vertical-align: bottom;
     margin: 0 10px;
+    line-height: 66px;
     &.shrink {
       font-size: 16px;
       text-shadow: 1px 1px 4px #000;
@@ -43,10 +48,50 @@
   }
 }
 
-.handle {
+#name {
+  position: absolute;
+  font-weight: 600;
+  font-family: 'Roboto Mono';
+  left: 25px;
+  line-height: 66px;
+}
+
+//////////////////////
+// SOCIAL COMPONENT //
+//////////////////////
+
+#handle {
   text-align: center;
   margin: 0 auto;
+  line-height: 66px;
+  width: 100%;
 }
+
+[id^="social-group-"] {
+  // default hidden
+  display: inline-block;
+  &.show-social-group {
+    
+  }
+}
+
+#social-group-first {
+  
+  &.show-social-group {
+
+  }
+}
+
+#social-group-second {
+  
+  &.show-social-group {
+
+  }
+}
+
+////////////////////
+// HAMBURGER MENU //
+////////////////////
 
 .hamburger-menu {
   vertical-align: middle;
